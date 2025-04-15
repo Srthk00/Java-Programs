@@ -1,0 +1,5 @@
+to read word by word from a file
+    -> Scanner sc=new Scanner(new File("PATH"));
+    -> while(sc.hasNext()){
+        sout(sc.next());
+    }
