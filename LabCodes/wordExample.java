@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class wordexample {
+public class wordExample {
   String strdata;
 
-  wordexample(String s){ 
+  wordExample(String s){ 
     this.strdata = s; 
   }
 
@@ -43,7 +43,7 @@ public class wordexample {
     System.out.print("Enter a String: ");
     String s = sc.nextLine();
     if (s.endsWith(".") || s.endsWith("?") || s.endsWith("!")) {
-      wordexample obj = new wordexample(s);
+      wordExample obj = new wordExample(s);
       obj.countWords();
       obj.placeWords();
     }
