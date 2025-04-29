@@ -1,17 +1,17 @@
 package course;
 
-public class course{
-    int courseID;
-    String courseName;
-    int courseCredits;
-    public course(int id,String name,int credit){
-        courseID=id;
-        courseName=name;
-        courseCredits=credit;
+public class Course {
+    private int courseId;
+    private String courseName;
+    private int credits;
+
+    public Course(int courseId, String courseName, int credits) {
+        this.courseId = courseId;
+        this.courseName = courseName;
+        this.credits = credits;
     }
-    public void getCourseInfo(){
-        System.out.println("Course ID: "+courseID);
-        System.out.println("Course Name: "+courseName);
-        System.out.println("Course Credits: "+courseCredits);
+
+    public String getCourseInfo() {
+        return "Course ID: " + courseId + ", Course Name: " + courseName + ", Credits: " + credits;
     }
 }

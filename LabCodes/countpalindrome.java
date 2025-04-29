@@ -19,7 +19,7 @@ class countpalindrome{
 
     public static void main(String[] args) throws Exception{
         int count=0;
-        Scanner sc=new Scanner(new File("sample.txt"));
+        Scanner sc=new Scanner(new File("myfile.txt"));
         while(sc.hasNext()){ 
             String str=sc.next();
             if(check(str)){

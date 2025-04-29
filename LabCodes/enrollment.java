@@ -1,16 +1,18 @@
-package enrollement;
-import student.student;
-import course.course;
+package enrollment;
 
-public class enrollment{
-    student s;
-    course c;
-    public enrollment(student stu,course cor){
-        s=stu;
-        c=cor;
+import student.Student;
+import course.Course;
+
+public class Enrollment {
+    private Student student;
+    private Course course;
+
+    public Enrollment(Student student, Course course) {
+        this.student = student;
+        this.course = course;
     }
-    public void getEnrollmentInfo(){
-        s.getInfo();
-        c.getCourseInfo();
+
+    public String getEnrollmentInfo() {
+        return student.getStudentInfo() + " | Enrolled in: " + course.getCourseInfo();
     }
 }

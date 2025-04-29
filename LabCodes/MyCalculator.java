@@ -29,7 +29,7 @@ public class MyCalculator {
             System.out.println(power(n,p));
         }
         catch(exp e){
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
         System.out.println("Rest of the Code will execute normally...");
     }

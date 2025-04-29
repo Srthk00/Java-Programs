@@ -1,17 +1,17 @@
 package student;
 
-public class student {
-    int studentID;
-    String name;
-    int age;
-    public student(int id,String n,int a){
-        studentID=id;
-        name=n;
-        age=a;
+public class Student {
+    private int studentId;
+    private String name;
+    private int age;
+
+    public Student(int studentId, String name, int age) {
+        this.studentId = studentId;
+        this.name = name;
+        this.age = age;
     }
-    public void getInfo(){
-        System.out.println("Student ID: "+studentID);
-        System.out.println("Student Name: "+name);
-        System.out.println("Student Age: "+age);
+
+    public String getStudentInfo() {
+        return "Student ID: " + studentId + ", Name: " + name + ", Age: " + age;
     }
 }
