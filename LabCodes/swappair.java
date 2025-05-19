@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class swappair {
     public void swap(ArrayList<String> list){
@@ -9,13 +10,17 @@ public class swappair {
         }
     }
     public static void main(String[] args) {
-        ArrayList<String> list=new ArrayList<>();
-        list.add("Sarthak");
-        list.add("Sidharth");
-        list.add("Somesh");
-        list.add("Rishav");
-        list.add("Ayush");
-
+        Scanner sc=new Scanner(System.in);
+        ArrayList<String> list = new ArrayList<String>();
+        System.out.print("Enter number of Elements: ");
+        int n=sc.nextInt();
+        sc.nextLine();
+        for(int i=0;i<n;i++){
+            System.out.print("Enter element: ");
+            String str=sc.nextLine();
+            list.add(str);
+        }
+        System.out.println("Original List: "+list);
         swappair obj=new swappair();
         obj.swap(list);
         System.out.println("Swapped List: "+list);

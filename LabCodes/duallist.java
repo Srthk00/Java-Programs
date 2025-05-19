@@ -1,6 +1,4 @@
-import java.lang.reflect.AccessibleObject;
 import java.util.*;
-
 
 public class duallist {
     LinkedList<Integer> list3=new LinkedList<Integer>();

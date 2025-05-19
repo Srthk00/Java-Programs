@@ -50,7 +50,7 @@ class countvowel extends JFrame implements ActionListener{
     }
     public static void main(String args[]) {
         countvowel d = new countvowel();
-        d.setSize(300, 400);
+        d.setSize(400, 300);
         d.setVisible(true);
         
     }

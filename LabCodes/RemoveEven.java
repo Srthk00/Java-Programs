@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Arraylist {
+public class RemoveEven {
     public void removeEvenLength(ArrayList<String> list) {
         Iterator<String> it = list.iterator();
         while (it.hasNext()) {
@@ -12,13 +12,17 @@ public class Arraylist {
     }
 
     public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
         ArrayList<String> list = new ArrayList<String>();
-        list.add("Sarthak");
-        list.add("Sidharth");
-        list.add("Somesh");
-        list.add("Rishav");
-
-        Arraylist obj = new Arraylist();
+        System.out.print("Enter number of Elements: ");
+        int n=sc.nextInt();
+        sc.nextLine();
+        for(int i=0;i<n;i++){
+            System.out.print("Enter element: ");
+            String str=sc.nextLine();
+            list.add(str);
+        }
+        RemoveEven obj = new RemoveEven();
         obj.removeEvenLength(list);
 
         System.out.println("Filtered list: " + list);
